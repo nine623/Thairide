@@ -1,133 +1,78 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>ThaiRide | Travel & Tour</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>thairide</title>
 
 <style>
-html,body{
-  margin:0;
-  height:100%;
-  font-family:system-ui,sans-serif;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* ===== SLIDESHOW BACKGROUND ===== */
-body{
-  animation: bg 30s infinite;
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  color:#fff;
+/* HEADER */
+.hero {
+  height: 80vh;
+  background: url('header-bg.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes bg{
-  0%{
-    background-image:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1552465011-b4e21bf6e79a"); /* Grand Palace */
-  }
-  20%{
-    background-image:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1580655653885-65763b2597d0"); /* Wat Pho */
-  }
-  40%{
-    background-image:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1528181304800-259b08848526"); /* Wat Arun */
-  }
-  60%{
-    background-image:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1609999601619-1c7b9f8f1961"); /* Safari World */
-  }
-  80%{
-    background-image:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1587300003388-59208cc962cb"); /* Dream World */
-  }
-  100%{
-    background-image:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1617196037304-5e7e8f6d7c30"); /* Dinosaur */
-  }
+/* Overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
 }
 
-/* ===== CONTENT BOX ===== */
-.box{
-  background:rgba(255,255,255,.18);
-  backdrop-filter:blur(14px);
-  border-radius:22px;
-  padding:40px;
-  max-width:900px;
-  width:90%;
-  text-align:center;
+/* Content */
+.hero-content {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-/* ===== BRAND ===== */
-h1{
-  margin:0 0 25px;
-  font-size:48px;
-  text-transform:lowercase;
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
 }
 
-/* ===== CARS ===== */
-.cars{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
-  gap:16px;
-  margin-bottom:25px;
-}
-.car{
-  background:rgba(255,255,255,.22);
-  border-radius:14px;
-  padding:16px;
-}
-.car img{
-  width:60px;
-}
-.car p{
-  margin:8px 0 0;
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-/* ===== PLACES ===== */
-.places{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  justify-content:center;
-}
-.place{
-  background:rgba(0,0,0,.45);
-  padding:8px 14px;
-  border-radius:999px;
-  font-size:14px;
+/* Button */
+.hero-content a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background: #ffcc00;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
 }
 </style>
 </head>
 
 <body>
-<div class="box">
-  <h1>thairide</h1>
 
-  <div class="cars">
-    <div class="car"><img src="https://img.icons8.com/fluency/96/sedan.png"><p>Altis</p></div>
-    <div class="car"><img src="https://img.icons8.com/fluency/96/car.png"><p>Camry</p></div>
-    <div class="car"><img src="https://img.icons8.com/fluency/96/suv.png"><p>SUV</p></div>
-    <div class="car"><img src="https://img.icons8.com/fluency/96/van.png"><p>Van</p></div>
+<header class="hero">
+  <div class="hero-content">
+    <h1>A Place to Explore<br>A Place to Smile</h1>
+    <p>
+      Private Car • One Day Trip • Family Travel<br>
+      Bangkok • Pattaya • Nearby Destinations
+    </p>
+    <a href="pattaya.html">View Trips</a>
   </div>
+</header>
 
-  <div class="places">
-    <div class="place">Grand Palace</div>
-    <div class="place">Wat Pho</div>
-    <div class="place">Wat Arun</div>
-    <div class="place">Safari World</div>
-    <div class="place">Dream World</div>
-    <div class="place">Dinosaur Park</div>
-  </div>
-</div>
 </body>
 </html>
