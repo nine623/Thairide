@@ -2,32 +2,90 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>ThaiRide | Private Car & Tour Service</title>
-  <meta name="description" content="บริการรถส่วนตัวพร้อมคนขับ ไม่ใช่แท็กซี่ สำหรับท่องเที่ยว กรุงเทพ อยุธยา พัทยา หัวหิน ราชบุรี">
+  <title>ThaiRide | Private Car Service</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="บริการรถส่วนตัวพร้อมคนขับ จองล่วงหน้า เหมา เที่ยว รับ–ส่ง กรุงเทพ อยุธยา พัทยา หัวหิน ราชบุรี">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1508009603885-50cf7c579365");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "✔ ";
+      color: #00ffcc;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.6);
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    .price {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>ThaiRide</h1>
+  <div class="container">
+    <h1>ThaiRide</h1>
 
-  <p>
-    บริการรถส่วนตัวพร้อมคนขับ <br>
-    ✔ ไม่ใช่ Taxi <br>
-    ✔ รถบ้าน / รถส่วนตัว <br>
-    ✔ จองล่วงหน้า เหมา เที่ยว รับ–ส่ง
-  </p>
+    <div class="card">
+      <p>
+        บริการรถส่วนตัวพร้อมคนขับ<br>
+        รถบ้าน / รถส่วนตัว<br>
+        จองล่วงหน้า เหมา เที่ยว รับ–ส่ง
+      </p>
 
-  <h2>พื้นที่ให้บริการ</h2>
-  <ul>
-    <li>กรุงเทพ</li>
-    <li>อยุธยา</li>
-    <li>พัทยา</li>
-    <li>หัวหิน</li>
-    <li>ราชบุรี</li>
-  </ul>
+      <h2>พื้นที่ให้บริการ</h2>
+      <ul>
+        <li>กรุงเทพ</li>
+        <li>อยุธยา</li>
+        <li>พัทยา</li>
+        <li>หัวหิน</li>
+        <li>ราชบุรี</li>
+      </ul>
 
-  <p>
-    เว็บไซต์นี้ไม่แสดงราคา <br>
-    ภาษาแสดงผลอิงตามระบบผู้ใช้งาน
-  </p>
+      <div class="price">สอบถามราคา</div>
+    </div>
+  </div>
 </body>
 </html>
