@@ -1,133 +1,133 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>thairide</title>
 
 <style>
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: system-ui, sans-serif;
+html,body{
+  margin:0;
+  height:100%;
+  font-family:system-ui,sans-serif;
 }
 
-/* ===== BACKGROUND สถานที่ท่องเที่ยว ===== */
-body {
-  background:
-    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1552465011-b4e21bf6e79a"), /* Grand Palace */
-    url("https://images.unsplash.com/photo-1580655653885-65763b2597d0"), /* Wat Pho */
-    url("https://images.unsplash.com/photo-1528181304800-259b08848526"), /* Wat Arun */
-    url("https://images.unsplash.com/photo-1593693397690-362cb9666fc2"), /* Floating market */
-    url("https://images.unsplash.com/photo-1609999601619-1c7b9f8f1961"), /* Safari */
-    url("https://images.unsplash.com/photo-1587300003388-59208cc962cb"), /* Dream World */
+/* ===== SLIDESHOW BACKGROUND ===== */
+body{
+  animation: bg 30s infinite;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+}
+
+@keyframes bg{
+  0%{
+    background-image:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1552465011-b4e21bf6e79a"); /* Grand Palace */
+  }
+  20%{
+    background-image:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1580655653885-65763b2597d0"); /* Wat Pho */
+  }
+  40%{
+    background-image:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1528181304800-259b08848526"); /* Wat Arun */
+  }
+  60%{
+    background-image:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1609999601619-1c7b9f8f1961"); /* Safari World */
+  }
+  80%{
+    background-image:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1587300003388-59208cc962cb"); /* Dream World */
+  }
+  100%{
+    background-image:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
     url("https://images.unsplash.com/photo-1617196037304-5e7e8f6d7c30"); /* Dinosaur */
-
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  }
 }
 
-/* ===== กล่องกลาง ===== */
-.container {
-  background: rgba(255,255,255,.15);
-  backdrop-filter: blur(14px);
-  border-radius: 20px;
-  padding: 40px;
-  max-width: 900px;
-  width: 90%;
-  text-align: center;
+/* ===== CONTENT BOX ===== */
+.box{
+  background:rgba(255,255,255,.18);
+  backdrop-filter:blur(14px);
+  border-radius:22px;
+  padding:40px;
+  max-width:900px;
+  width:90%;
+  text-align:center;
 }
 
-/* ===== แบรนด์ ===== */
-h1 {
-  margin: 0 0 20px;
-  font-size: 48px;
-  letter-spacing: 2px;
-  text-transform: lowercase;
+/* ===== BRAND ===== */
+h1{
+  margin:0 0 25px;
+  font-size:48px;
+  text-transform:lowercase;
 }
 
-/* ===== รถ ===== */
-.cars {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
-  gap: 16px;
-  margin-bottom: 25px;
+/* ===== CARS ===== */
+.cars{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+  gap:16px;
+  margin-bottom:25px;
+}
+.car{
+  background:rgba(255,255,255,.22);
+  border-radius:14px;
+  padding:16px;
+}
+.car img{
+  width:60px;
+}
+.car p{
+  margin:8px 0 0;
 }
 
-.car {
-  background: rgba(255,255,255,.2);
-  border-radius: 14px;
-  padding: 16px;
+/* ===== PLACES ===== */
+.places{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
 }
-
-.car img {
-  width: 64px;
-  height: 64px;
-}
-
-.car p {
-  margin: 8px 0 0;
-  font-weight: 500;
-}
-
-/* ===== สถานที่ ===== */
-.places {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-
-.place {
-  background: rgba(0,0,0,.4);
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-size: 14px;
+.place{
+  background:rgba(0,0,0,.45);
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:14px;
 }
 </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>thairide</h1>
+<div class="box">
+  <h1>thairide</h1>
 
-    <!-- ประเภทรถ -->
-    <div class="cars">
-      <div class="car">
-        <img src="https://img.icons8.com/fluency/96/sedan.png">
-        <p>Altis</p>
-      </div>
-      <div class="car">
-        <img src="https://img.icons8.com/fluency/96/car.png">
-        <p>Camry</p>
-      </div>
-      <div class="car">
-        <img src="https://img.icons8.com/fluency/96/suv.png">
-        <p>SUV</p>
-      </div>
-      <div class="car">
-        <img src="https://img.icons8.com/fluency/96/van.png">
-        <p>Van</p>
-      </div>
-    </div>
-
-    <!-- สถานที่ท่องเที่ยว -->
-    <div class="places">
-      <div class="place">Grand Palace</div>
-      <div class="place">Wat Pho</div>
-      <div class="place">Wat Arun</div>
-      <div class="place">Floating Market</div>
-      <div class="place">Safari World</div>
-      <div class="place">Dream World</div>
-      <div class="place">Dinosaur Park</div>
-    </div>
+  <div class="cars">
+    <div class="car"><img src="https://img.icons8.com/fluency/96/sedan.png"><p>Altis</p></div>
+    <div class="car"><img src="https://img.icons8.com/fluency/96/car.png"><p>Camry</p></div>
+    <div class="car"><img src="https://img.icons8.com/fluency/96/suv.png"><p>SUV</p></div>
+    <div class="car"><img src="https://img.icons8.com/fluency/96/van.png"><p>Van</p></div>
   </div>
+
+  <div class="places">
+    <div class="place">Grand Palace</div>
+    <div class="place">Wat Pho</div>
+    <div class="place">Wat Arun</div>
+    <div class="place">Safari World</div>
+    <div class="place">Dream World</div>
+    <div class="place">Dinosaur Park</div>
+  </div>
+</div>
 </body>
 </html>
