@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Trip One Day กรุงเทพ | ThaiRide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,8 +11,8 @@
       font-family: Arial, sans-serif;
       color: #fff;
       background:
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("https://images.unsplash.com/photo-1563492065599-3520f775eeed");
+        linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+        url("L_775hjmvl_GW-1.png");
       background-size: cover;
       background-position: center;
       min-height: 100vh;
@@ -34,83 +34,85 @@
       color: #00ffcc;
     }
 
-    p, li {
+    p {
       font-size: 18px;
       line-height: 1.6;
     }
 
     ul {
-      padding-left: 20px;
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "✔ ";
+      color: #00ffcc;
+      font-weight: bold;
     }
 
     .card {
-      background: rgba(0,0,0,0.65);
+      background: rgba(0,0,0,0.6);
       padding: 25px;
-      border-radius: 14px;
+      border-radius: 12px;
       margin-top: 25px;
     }
 
     .price {
       font-size: 22px;
-      font-weight: bold;
       color: #00ffcc;
+      font-weight: bold;
       margin-top: 15px;
     }
 
     .btn {
-      display: inline-block;
+      display: block;
       margin-top: 20px;
-      padding: 14px 24px;
+      text-align: center;
       background: #00ffcc;
       color: #000;
-      font-weight: bold;
-      border-radius: 8px;
+      padding: 15px;
+      border-radius: 10px;
       text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
     }
 
     .btn:hover {
       opacity: 0.85;
-    }
-
-    .back {
-      display: inline-block;
-      margin-top: 30px;
-      color: #00ffcc;
-      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Trip One Day กรุงเทพฯ</h1>
-    <p>
-      โปรแกรมท่องเที่ยวแบบสบาย ๆ ไม่เร่งรีบ  
-      เหมาะสำหรับลูกค้าที่ต้องการเหมา Tempo พร้อมคนขับ
-    </p>
+
+    <h1>Trip One Day กรุงเทพ</h1>
+    <p>เที่ยวกรุงเทพแบบสบาย ๆ รถส่วนตัว พร้อมคนขับ ไม่เร่ง ไม่วุ่นวาย</p>
 
     <div class="card">
-      <h2>📍 สถานที่ท่องเที่ยว (ตัวอย่าง)</h2>
+      <h2>สถานที่ท่องเที่ยวยอดนิยม</h2>
       <ul>
-        <li>วัดพระแก้ว / วัดโพธิ์</li>
-        <li>พระบรมมหาราชวัง</li>
-        <li>คาเฟ่ริมแม่น้ำเจ้าพระยา</li>
-        <li>เยาวราช / ถนนข้าวสาร</li>
-        <li>ICONSIAM หรือเอเชียทีค</li>
+        <li>วัดพระแก้ว / พระบรมมหาราชวัง</li>
+        <li>วัดโพธิ์</li>
+        <li>วัดอรุณราชวราราม</li>
+        <li>เยาวราช (Street Food)</li>
+        <li>ICONSIAM / เอเชียทีค</li>
       </ul>
-
-      <h2>🚐 รถที่ใช้</h2>
-      <p>Tempo / Van ส่วนตัว พร้อมคนขับ</p>
-
-      <h2>⏱ ระยะเวลา</h2>
-      <p>ประมาณ 8–10 ชั่วโมง (One Day Trip)</p>
-
-      <p class="price">💰 ราคาเริ่มต้น: ติดต่อสอบถาม</p>
-
-      <a class="btn" href="contact.html">ติดต่อจองรถ</a>
     </div>
 
-    <a class="back" href="index.html">← กลับหน้าแรก</a>
+    <div class="card">
+      <h2>รูปแบบการเดินทาง</h2>
+      <p>
+        ✔ รถ Tempo / Van / SUV <br>
+        ✔ เหมาวัน 8–10 ชั่วโมง <br>
+        ✔ รับ–ส่ง โรงแรม / สนามบิน
+      </p>
+
+      <div class="price">ราคา : สอบถามผ่านแชต</div>
+
+      <a class="btn" href="index.html">ติดต่อสอบถาม</a>
+    </div>
+
   </div>
 </body>
 </html>
