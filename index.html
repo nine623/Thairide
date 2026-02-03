@@ -4,17 +4,8 @@
   <meta charset="UTF-8">
   <title>ThaiRide | Private Car Service</title>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9XCVN1N0W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-V9XCVN1N0W');
-  </script>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="บริการรถส่วนตัวพร้อมคนขับ จองล่วงหน้า เหมา เที่ยว รับ–ส่ง กรุงเทพ อยุธยา พัทยา หัวหิน ราชบุรี">
+  <meta name="description" content="บริการรถส่วนตัวพร้อมคนขับ รถบ้าน ไม่ใช่แท็กซี่ จองล่วงหน้า เหมา เที่ยว รับ–ส่ง">
 
   <style>
     body {
@@ -71,6 +62,52 @@
       font-weight: bold;
       color: #00ffcc;
     }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      text-align: center;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .contact-btn {
+      display: block;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .line {
+      background: #00ffcc;
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .wechat {
+      background: #09b83e;
+    }
+
+    .qr-box {
+      margin-top: 25px;
+    }
+
+    .qr-box img {
+      max-width: 220px;
+      border-radius: 12px;
+      margin-top: 10px;
+      background: #fff;
+      padding: 10px;
+    }
   </style>
 </head>
 
@@ -81,7 +118,7 @@
     <div class="card">
       <p>
         บริการรถส่วนตัวพร้อมคนขับ<br>
-        รถบ้าน / รถส่วนตัว<br>
+        รถบ้าน / รถส่วนตัว (ไม่ใช่แท็กซี่)<br>
         จองล่วงหน้า เหมา เที่ยว รับ–ส่ง
       </p>
 
@@ -95,6 +132,23 @@
       </ul>
 
       <div class="price">สอบถามราคา</div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card contact">
+      <h2>ติดต่อเรา</h2>
+      <p>ติดต่อผ่านแชตเท่านั้น (ไม่มีการรับสาย)</p>
+
+      <div class="contact-grid">
+        <a href="#" class="contact-btn line">💬 LINE</a>
+        <a href="https://wa.me/" target="_blank" class="contact-btn whatsapp">💬 WhatsApp</a>
+        <a href="#" class="contact-btn wechat">💬 WeChat</a>
+      </div>
+
+      <div class="qr-box">
+        <p>สแกน QR Code เพื่อแชต LINE OA</p>
+        <img src="line-oa-qr.png" alt="LINE OA QR Code">
+      </div>
     </div>
   </div>
 </body>
