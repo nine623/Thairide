@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>TheiRide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: url("https://images.unsplash.com/photo-1549692520-acc6669e2f0c")
+        no-repeat center center / cover;
+      color: #fff;
+    }
+
+    /* แถบบน */
+    header {
+      height: 220px;
+      background: url("https://images.unsplash.com/photo-1508009603885-50cf7c579365")
+        no-repeat center / cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header h1 {
+      background: rgba(0,0,0,0.45);
+      padding: 12px 28px;
+      border-radius: 14px;
+      font-size: 38px;
+      letter-spacing: 1px;
+    }
+
+    /* กล่องโปร่งใส */
+    .glass {
+      background: rgba(0,0,0,0.45);
+      backdrop-filter: blur(6px);
+      margin: 30px auto;
+      padding: 25px;
+      max-width: 1200px;
+      border-radius: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* สถานที่ท่องเที่ยว */
+    .places {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .place {
+      background: rgba(255,255,255,0.15);
+      padding: 12px;
+      border-radius: 14px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    /* รถ */
+    .cars {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+    }
+
+    .car {
+      background: rgba(255,255,255,0.15);
+      padding: 15px;
+      border-radius: 14px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>TheiRide</h1>
+  </header>
+
+  <!-- สถานที่ท่องเที่ยว -->
+  <div class="glass">
+    <h2>สถานที่ท่องเที่ยวแนะนำ</h2>
+    <div class="places">
+      <div class="place">🏯 The Grand Palace</div>
+      <div class="place">🙏 Wat Pho</div>
+      <div class="place">🌅 Wat Arun</div>
+      <div class="place">🚤 Floating Market</div>
+      <div class="place">🚂 Train Market</div>
+      <div class="place">🦁 Safari World</div>
+      <div class="place">🎢 Dream World</div>
+      <div class="place">🦖 Dinosaur Park</div>
+    </div>
+
+    <!-- ประเภทรถ -->
+    <h2 style="margin-top:30px;">ประเภทรถรับจ้าง</h2>
+    <div class="cars">
+      <div class="car">Altis</div>
+      <div class="car">Camry</div>
+      <div class="car">SUV</div>
+      <div class="car">Van</div>
+    </div>
+  </div>
+
+  <footer>
+    © TheiRide | Bangkok Travel & Transportation
+  </footer>
+
+</body>
+</html>
